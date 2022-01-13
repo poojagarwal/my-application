@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<html>
+<style>
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url("bg.jpg");
+    height: 30%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;s
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+p {
+  text-align:center;
+  font-size: 50px;
+  margin-top: 0px;
+}
+ {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*box images*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 19.83%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 100px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 6px;
+  color: white;
+  background-color: #000;
+  text-aligncenter;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+   
+  </div>
+  <div class="middle">
+    <p id="demo"></p>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 8, 2019 10:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+		
+        document.getElementById("demo").innerHTML ="ONLINE SHOPPING SYSTEM";
+    }
+}, 1000);
+</script>
+  <div class="bottomleft">
+    
+  </div>
+</div>
+</div>
+</body>
+
+<body>
+
+<div id="navbar">
+  <a href="home.html">&nbsp;&nbsp;Home</a>
+  <a href="about.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AboutProject</a>
+  <a href="allcmp.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AllCompanies</a>
+  
+  <a href="user.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9997;&nbsp;signin/register</a>
+  <a href="cart1.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mycart</a>
+  <a href="main.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10226;&nbsp;&nbsp;Logout</a>
+</div>
+
+<div style="padding:15px 15px 2500px;font-size:30px;margin-top:30px;">
+  
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<div class="main">
+<center><h1>OUR COLLECTIONS
+<hr>
+Best items
+</h1>
+</center>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">MOBILES</button>
+ 
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="card">
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="a12.jpg" alt="Mountains" style="width:62%">
+      <h1>Apple 12pro <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;98,000/-</h1>
+        <a href="a12.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+</div>
+  <div class="column nature">
+    <div class="content">
+    <img src="a11.jpg" alt="Lights" style="width:88%">
+      <h1>Apple 11pro<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;69,000/-</h1>
+      <a href="a11.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="m1.jpeg" alt="Nature" style="width:47%">
+    <h1>Redmi 8pro<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15,000/-</h1>
+    <a href="m8.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="s1.jpg" alt="Nature" style="width:89%">
+    <h1>Samsung S1<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18,000/-</h1>
+    <a href="s1.html"><font size="3">Buy Now</font></a>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="mog.jpg" alt="Car" style="width:72%">
+      <h1>MOTOROLA <BR>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12,000/-</p>
+    <a href="mog.html"><font size="3">Buy Now</font></a>
+    </div>
+  </div>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Laptops</button>
+ </div>
+ </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="apl.jpg" alt="Car" style="width:75%">
+      <h1>Apple <BR>
+        
+  &nbsp;&nbsp;&nbsp;&nbsp;72,000/-</h1>
+       <a href="ap1.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="Sony.jpg" alt="Car" style="width:100%">
+      <h1> Sony<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45,000/-</h1>
+       <a href="son.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+    <img src="hp.jpg" alt="Car" style="width:76%">
+      <h1>HP<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50,000/-</p>
+     <a href="hp.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+<div class="column cars">
+    <div class="content">
+    <img src="lenovo.jpg" alt="Car" style="width:52%">
+      <h1>Lenovo<br>
+    tablet
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40,000/-</p></h1>
+    <a href="ln.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="lp.jpeg" alt="Car" style="width:81%">
+      <h1>Acer<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27,000/-</p>
+     <a href="lp.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  
+   
+
+  </div>
+  <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Camera</button>
+ </div>
+
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="can.jpg" alt="Car" style="width:111%">
+      <h1>Canon<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;29000/-</h1>
+       <a href="cn.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  
+  
+  <div class="column cars">
+    <div class="content">
+    <img src="son.jpg" alt="Car" style="width:74%">
+      <h1> Sony<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22000/-</h1>
+       <a href="sn.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="kod.jpg" alt="Car" style="width:73%">
+      <h1>Kodok<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19,100/-</p>
+     <a href="k.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+<div class="column cars">
+    <div class="content">
+    <img src="nk.jpg" alt="Car" style="width:99%">
+	
+      <h1>Nikon<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;850/-</p>
+    <a href="nk.html"><font size="3" color="blue">Buy Now</font></a>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="pan.jpg" alt="Car" style="width:60%">
+      <h1>Panasonic <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17510/-</p>
+    <a href="pan.html"><font size="3">Buy Now</font></a>
+    </div>
+  </div>
+  
+
+
+  
+
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+</body>
+</html>
